@@ -13,11 +13,11 @@ import java.time.Duration;
 public class BaseClass {
     protected WebDriver driver;
 
-    @Parameters("browser")
+    @Parameters("browserName")
     @BeforeClass
-    public void setUp(String browser) {
+    public void setUp(String browserName) {
         // Initialize WebDriver based on the browser parameter
-        switch (browser.toLowerCase()) {
+        switch (browserName.toLowerCase()) {
             case "chrome":
                 driver = new ChromeDriver();
                 break;
@@ -31,7 +31,7 @@ public class BaseClass {
                 break;
 
             default:
-                throw new IllegalArgumentException("Unsupported browser: " + browser);
+                throw new IllegalArgumentException("Unsupported browser: " + browserName);
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

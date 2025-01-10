@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browserName" value="chrome"/>
-  <parameter name="url" value="https://automationexercise.com/"/>
-  <test thread-count="5" name="HomePage Tests(failed)">
+  <test thread-count="5" name="ProductPage Tests(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://automationexercise.com/products"/>
     <classes>
-      <class name="com.testCases.HomePageTestCases">
+      <class name="com.testCases.ProductPageTestCases">
         <methods>
-          <include name="testCarouselContent"/>
+          <include name="setupPageObject"/>
           <include name="tearDown"/>
-          <include name="testHomePageLoadsSuccessfully"/>
           <include name="setUp"/>
-          <include name="testLogoVisibility"/>
-          <include name="testPageTitle"/>
-          <include name="testNavigationLinks"/>
-          <include name="testFooterLinksVisibility"/>
+          <include name="testAddToCartButton"/>
         </methods>
-      </class> <!-- com.testCases.HomePageTestCases -->
+      </class> <!-- com.testCases.ProductPageTestCases -->
     </classes>
-  </test> <!-- HomePage Tests(failed) -->
+  </test> <!-- ProductPage Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

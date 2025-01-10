@@ -8,6 +8,14 @@
             <class name="com.testCases.HomePageTestCases"/>
         </classes>
     </test>
+    
+    <test name="ProductPage Tests" enabled="true" >
+      <parameter name="browserName" value="chrome" />
+		<parameter name="url" value="https://automationexercise.com/products" />
+        <classes>
+            <class name="com.testCases.ProductPageTestCases"/>
+        </classes>
+    </test>
   
   
 </suite> <!-- Suite -->
