@@ -1,11 +1,10 @@
 package com.testCases;
-
+import com.pageObject.RegistrationPage;
+import com.testBase.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import com.pageObject.RegistrationPage;
-import com.testBase.BaseClass;
 
 public class RegistrationTestCase extends BaseClass {
 	RegistrationPage registrationPage;
@@ -15,14 +14,25 @@ public class RegistrationTestCase extends BaseClass {
 		registrationPage = new RegistrationPage(driver);
 	}
 
+
 	@Parameters("url")
-	@Test(priority = 1, description = "Verify that the Registration page loads successfully")
-	public void testRegistrationPageLoadsSuccessfully(String url) {
+	@Test(priority = 1, description = "Verify signup successufully")
+	public void testfillSignupForm(String url) {
 		driver.get(url);
-		String title = registrationPage.getPageTitle(driver);
-		Assert.assertEquals(title, "Automation Exercise - Signup / Login", "Registration page title mismatch.");
-		System.out.println("Registration page loaded successfully with title: " + title);
+		registrationPage.fillSignupForm();
+		// Step 3: Verify Account Created message
+		String currentURL = driver.getCurrentUrl();
+		String expectedURL = "https://automationexercise.com/signup";
+		Assert.assertEquals(currentURL, expectedURL, "SignUp failed.");
+		System.out.println("Sign up successfully: ");
 	}
 
-
+	@Test(priority = 2, description = "Verify new user registration")
+	public void testNewUserRegistration() {
+		registrationPage.fillAccountInformation();
+		// Step 3: Verify Account Created message
+		boolean accountCreated = registrationPage.isAccountCreated();
+		Assert.assertTrue(accountCreated, "Account creation failed.");
+		System.out.println("New account created successfully: " + accountCreated);
+	}
 }

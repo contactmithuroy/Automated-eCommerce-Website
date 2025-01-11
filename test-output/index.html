@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">6 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">20 methods, 2 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.HomePageTestCases" class="method navigator-link" hash-for-method="testCarouselContent">testCarouselContent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.contactPageTestCases" class="method navigator-link" hash-for-method="testFormSubmissionWithMissingEmail(https://automationexercise.com/contact_us)">testFormSubmissionWithMissingEmail(https://automationexercise.com/contact_us)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +122,92 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.ProductPageTestCases" class="method navigator-link" hash-for-method="productDetailsButton">productDetailsButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.ProductPageTestCases" class="method navigator-link" hash-for-method="testAddToCartButton">testAddToCartButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.ProductPageTestCases" class="method navigator-link" hash-for-method="testBranSelection">testBranSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.ProductPageTestCases" class="method navigator-link" hash-for-method="testCategorySelection">testCategorySelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.contactPageTestCases" class="method navigator-link" hash-for-method="testContactUsPageLoadsSuccessfully(https://automationexercise.com/contact_us)">testContactUsPageLoadsSuccessfully(https://automationexercise.com/contact_us)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.HomePageTestCases" class="method navigator-link" hash-for-method="testFooterLinksVisibility">testFooterLinksVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.contactPageTestCases" class="method navigator-link" hash-for-method="testFormSubmissionWithValidData">testFormSubmissionWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.ProductPageTestCases" class="method navigator-link" hash-for-method="testHomePageLoadSuccessfully(https://automationexercise.com/products)">testHomePageLoadSuccessfully(https://automationexercise.com/products)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.HomePageTestCases" class="method navigator-link" hash-for-method="testHomePageLoadsSuccessfully(https://automationexercise.com/)">testHomePageLoadsSuccessfully(https://automationexercise.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.LogoutTestCase" class="method navigator-link" hash-for-method="testLoginAndLogout(https://automationexercise.com/login)">testLoginAndLogout(https://automationexercise.com/login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.testCases.LoginTestCases" class="method navigator-link" hash-for-method="testLoginPageLoadsSuccessfully(https://automationexercise.com/login)">testLoginPageLoadsSuccessfully(https://automationexercise.com/login)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.testCases.LoginTestCases" class="method navigator-link" hash-for-method="testLoginWithValidCredentials">testLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.HomePageTestCases" class="method navigator-link" hash-for-method="testLogoVisibility">testLogoVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.HomePageTestCases" class="method navigator-link" hash-for-method="testNavigationLinks">testNavigationLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.RegistrationTestCase" class="method navigator-link" hash-for-method="testNewUserRegistration">testNewUserRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.HomePageTestCases" class="method navigator-link" hash-for-method="testPageTitle">testPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.ProductPageTestCases" class="method navigator-link" hash-for-method="testSearchFunctionality">testSearchFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testCases.RegistrationTestCase" class="method navigator-link" hash-for-method="testfillSignupForm(https://automationexercise.com/login)">testfillSignupForm(https://automationexercise.com/login)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -123,6 +222,77 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testCases.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCarouselContent">
+                  </a> <!-- testCarouselContent -->
+                  <span class="method-name">testCarouselContent</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[EdgeDriver: MicrosoftEdge on windows (0a577bc3e6de97bb484847e5846b140b)] -&gt; xpath: //div[@class=&apos;carousel-inner&apos;]//div[contains(@class, &apos;active&apos;)]]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:2418}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MITHU\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2418/devtool..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a577bc3e6de97bb484847e5846b140b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pageObject.HomePage.isCarouselContentChanging(HomePage.java:73)
+	at com.testCases.HomePageTestCases.testCarouselContent(HomePageTestCases.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the carousel/banner content changes correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testCases.contactPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFormSubmissionWithMissingEmail(https://automationexercise.com/contact_us)">
+                  </a> <!-- testFormSubmissionWithMissingEmail(https://automationexercise.com/contact_us) -->
+                  <span class="method-name">testFormSubmissionWithMissingEmail</span>
+                  <span class="parameters">(https://automationexercise.com/contact_us)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: MicrosoftEdge=131.0.2903.112)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [71175d7a65f51a5749b90bfa4224d6c8, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:2495}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MITHU\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2495/devtool..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71175d7a65f51a5749b90bfa4224d6c8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1194)
+	at com.pageObject.ContactPage.submitForm(ContactPage.java:75)
+	at com.testCases.contactPageTestCases.testFormSubmissionWithMissingEmail(contactPageTestCases.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test form submission with missing email value and validate error messages)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -150,6 +320,195 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testCases.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFooterLinksVisibility">
+                  </a> <!-- testFooterLinksVisibility -->
+                  <span class="method-name">testFooterLinksVisibility</span>
+                  <em>
+(Check the visibility and functionality of footer links)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageLoadsSuccessfully(https://automationexercise.com/)">
+                  </a> <!-- testHomePageLoadsSuccessfully(https://automationexercise.com/) -->
+                  <span class="method-name">testHomePageLoadsSuccessfully</span>
+                  <span class="parameters">(https://automationexercise.com/)</span>
+                  <em>
+(Verify that the homepage loads successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogoVisibility">
+                  </a> <!-- testLogoVisibility -->
+                  <span class="method-name">testLogoVisibility</span>
+                  <em>
+(Verify the logo of the page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigationLinks">
+                  </a> <!-- testNavigationLinks -->
+                  <span class="method-name">testNavigationLinks</span>
+                  <em>
+(Validate that navigation links redirect to the correct pages)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageTitle">
+                  </a> <!-- testPageTitle -->
+                  <span class="method-name">testPageTitle</span>
+                  <em>
+(Verify the title of the page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testCases.ProductPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productDetailsButton">
+                  </a> <!-- productDetailsButton -->
+                  <span class="method-name">productDetailsButton</span>
+                  <em>
+(Validate that product details page works correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCartButton">
+                  </a> <!-- testAddToCartButton -->
+                  <span class="method-name">testAddToCartButton</span>
+                  <em>
+(Validate that navigation links redirect to the correct pages)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBranSelection">
+                  </a> <!-- testBranSelection -->
+                  <span class="method-name">testBranSelection</span>
+                  <em>
+(Validate that brand option (Polo, H&M, Biba) works correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCategorySelection">
+                  </a> <!-- testCategorySelection -->
+                  <span class="method-name">testCategorySelection</span>
+                  <em>
+(Validate that category option (WOMEN, MEN, KIDS) works correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageLoadSuccessfully(https://automationexercise.com/products)">
+                  </a> <!-- testHomePageLoadSuccessfully(https://automationexercise.com/products) -->
+                  <span class="method-name">testHomePageLoadSuccessfully</span>
+                  <span class="parameters">(https://automationexercise.com/products)</span>
+                  <em>
+(Verify that the product page loads successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionality">
+                  </a> <!-- testSearchFunctionality -->
+                  <span class="method-name">testSearchFunctionality</span>
+                  <em>
+(Test the search functionality on the product page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testCases.RegistrationTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewUserRegistration">
+                  </a> <!-- testNewUserRegistration -->
+                  <span class="method-name">testNewUserRegistration</span>
+                  <em>
+(Verify new user registration)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testfillSignupForm(https://automationexercise.com/login)">
+                  </a> <!-- testfillSignupForm(https://automationexercise.com/login) -->
+                  <span class="method-name">testfillSignupForm</span>
+                  <span class="parameters">(https://automationexercise.com/login)</span>
+                  <em>
+(Verify signup successufully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testCases.contactPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactUsPageLoadsSuccessfully(https://automationexercise.com/contact_us)">
+                  </a> <!-- testContactUsPageLoadsSuccessfully(https://automationexercise.com/contact_us) -->
+                  <span class="method-name">testContactUsPageLoadsSuccessfully</span>
+                  <span class="parameters">(https://automationexercise.com/contact_us)</span>
+                  <em>
+(Verify that the contact us page loads successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFormSubmissionWithValidData">
+                  </a> <!-- testFormSubmissionWithValidData -->
+                  <span class="method-name">testFormSubmissionWithValidData</span>
+                  <em>
+(Test the form submission with valid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testCases.LogoutTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginAndLogout(https://automationexercise.com/login)">
+                  </a> <!-- testLoginAndLogout(https://automationexercise.com/login) -->
+                  <span class="method-name">testLoginAndLogout</span>
+                  <span class="parameters">(https://automationexercise.com/login)</span>
+                  <em>
+(Verify that login and logout functionality work successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -160,6 +519,27 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HomePage Tests&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://automationexercise.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testCases.HomePageTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HomePage Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ProductPage Tests&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://automationexercise.com/products&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testCases.ProductPageTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ProductPage Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ContactPage Tests&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://automationexercise.com/contact_us&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testCases.contactPageTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ContactPage Tests --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LoginPage Tests&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://automationexercise.com/login&quot;/&gt;
@@ -167,6 +547,20 @@
       &lt;class name=&quot;com.testCases.LoginTestCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginPage Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LogoutPage Tests&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://automationexercise.com/login&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testCases.LogoutTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LogoutPage Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;RegistrationPage Tests&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://automationexercise.com/login&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testCases.RegistrationTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegistrationPage Tests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -178,7 +572,22 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">HomePage Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ProductPage Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ContactPage Tests (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">LoginPage Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LogoutPage Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RegistrationPage Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,20 +613,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLoginWithValidCredentials')
-data.setCell(0, 2, 'com.testCases.LoginTestCases')
-data.setCell(0, 3, 5598);
+data.setCell(0, 1, 'testLoginAndLogout')
+data.setCell(0, 2, 'com.testCases.LogoutTestCase')
+data.setCell(0, 3, 17758);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginPageLoadsSuccessfully')
-data.setCell(1, 2, 'com.testCases.LoginTestCases')
-data.setCell(1, 3, 3504);
+data.setCell(1, 1, 'testNavigationLinks')
+data.setCell(1, 2, 'com.testCases.HomePageTestCases')
+data.setCell(1, 3, 16482);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCategorySelection')
+data.setCell(2, 2, 'com.testCases.ProductPageTestCases')
+data.setCell(2, 3, 14161);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLoginWithValidCredentials')
+data.setCell(3, 2, 'com.testCases.LoginTestCases')
+data.setCell(3, 3, 13489);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testNewUserRegistration')
+data.setCell(4, 2, 'com.testCases.RegistrationTestCase')
+data.setCell(4, 3, 12005);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCarouselContent')
+data.setCell(5, 2, 'com.testCases.HomePageTestCases')
+data.setCell(5, 3, 11036);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testFooterLinksVisibility')
+data.setCell(6, 2, 'com.testCases.HomePageTestCases')
+data.setCell(6, 3, 10094);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testBranSelection')
+data.setCell(7, 2, 'com.testCases.ProductPageTestCases')
+data.setCell(7, 3, 8862);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testHomePageLoadsSuccessfully')
+data.setCell(8, 2, 'com.testCases.HomePageTestCases')
+data.setCell(8, 3, 7272);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testfillSignupForm')
+data.setCell(9, 2, 'com.testCases.RegistrationTestCase')
+data.setCell(9, 3, 6189);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testFormSubmissionWithValidData')
+data.setCell(10, 2, 'com.testCases.contactPageTestCases')
+data.setCell(10, 3, 5381);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testFormSubmissionWithMissingEmail')
+data.setCell(11, 2, 'com.testCases.contactPageTestCases')
+data.setCell(11, 3, 4947);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testHomePageLoadSuccessfully')
+data.setCell(12, 2, 'com.testCases.ProductPageTestCases')
+data.setCell(12, 3, 4682);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'productDetailsButton')
+data.setCell(13, 2, 'com.testCases.ProductPageTestCases')
+data.setCell(13, 3, 4465);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testContactUsPageLoadsSuccessfully')
+data.setCell(14, 2, 'com.testCases.contactPageTestCases')
+data.setCell(14, 3, 4403);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testSearchFunctionality')
+data.setCell(15, 2, 'com.testCases.ProductPageTestCases')
+data.setCell(15, 3, 4306);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testAddToCartButton')
+data.setCell(16, 2, 'com.testCases.ProductPageTestCases')
+data.setCell(16, 3, 3303);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testLoginPageLoadsSuccessfully')
+data.setCell(17, 2, 'com.testCases.LoginTestCases')
+data.setCell(17, 3, 2787);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testLogoVisibility')
+data.setCell(18, 2, 'com.testCases.HomePageTestCases')
+data.setCell(18, 3, 181);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testPageTitle')
+data.setCell(19, 2, 'com.testCases.HomePageTestCases')
+data.setCell(19, 3, 39);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -243,26 +724,173 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testCases.LoginTestCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.testCases.HomePageTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(chrome)</span>
+                <span class="method-name">setUp(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setupPageObject</span>
-                <span class="method-start">5936 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testLoginPageLoadsSuccessfully(https://automationexercise.com/login)</span>
-                <span class="method-start">6138 ms</span>
+                <span class="method-name">testHomePageLoadsSuccessfully(https://automationexercise.com/)</span>
+                <span class="method-start">9461 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testLoginWithValidCredentials</span>
-                <span class="method-start">9652 ms</span>
+                <span class="method-name">testNavigationLinks</span>
+                <span class="method-start">16749 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPageTitle</span>
+                <span class="method-start">33241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogoVisibility</span>
+                <span class="method-start">33291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCarouselContent</span>
+                <span class="method-start">33485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFooterLinksVisibility</span>
+                <span class="method-start">44539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15260 ms</span>
+                <span class="method-start">54645 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testCases.ProductPageTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">56696 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupPageObject</span>
+                <span class="method-start">59852 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testHomePageLoadSuccessfully(https://automationexercise.com/products)</span>
+                <span class="method-start">59865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToCartButton</span>
+                <span class="method-start">64560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionality</span>
+                <span class="method-start">67873 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCategorySelection</span>
+                <span class="method-start">72188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testBranSelection</span>
+                <span class="method-start">86354 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productDetailsButton</span>
+                <span class="method-start">95233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99705 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testCases.contactPageTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">103082 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupPageObject</span>
+                <span class="method-start">110562 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testContactUsPageLoadsSuccessfully(https://automationexercise.com/contact_us)</span>
+                <span class="method-start">110579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFormSubmissionWithValidData</span>
+                <span class="method-start">114992 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFormSubmissionWithMissingEmail(https://automationexercise.com/contact_us)</span>
+                <span class="method-start">120381 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">125347 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testCases.LoginTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">127522 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupPageObject</span>
+                <span class="method-start">132047 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testLoginPageLoadsSuccessfully(https://automationexercise.com/login)</span>
+                <span class="method-start">132060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithValidCredentials</span>
+                <span class="method-start">134852 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">148343 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testCases.LogoutTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">148996 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupPageObject</span>
+                <span class="method-start">152783 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testLoginAndLogout(https://automationexercise.com/login)</span>
+                <span class="method-start">152792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">170561 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testCases.RegistrationTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">171311 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupPageObject</span>
+                <span class="method-start">175356 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testfillSignupForm(https://automationexercise.com/login)</span>
+                <span class="method-start">175376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewUserRegistration</span>
+                <span class="method-start">181572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">193584 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
