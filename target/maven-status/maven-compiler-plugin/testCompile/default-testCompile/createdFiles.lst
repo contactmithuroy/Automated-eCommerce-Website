@@ -1,0 +1,12 @@
+com\testBase\BaseClass.class
+com\testCases\HomePageTestCases.class
+com\utilities\Utilitie.class
+com\testCases\RegistrationTestCase.class
+com\pageObject\HomePage.class
+com\pageObject\LoginPage.class
+com\testCases\LoginTestCases.class
+com\pageObject\LogoutPage.class
+com\pageObject\ProductPage.class
+com\testCases\ProductPageTestCases.class
+com\pageObject\RegistrationPage.class
+com\testCases\LogoutTestCase.class

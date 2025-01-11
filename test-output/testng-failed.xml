@@ -10,7 +10,7 @@
           <include name="setupPageObject"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testAddToCartButton"/>
+          <include name="productDetailsButton"/>
         </methods>
       </class> <!-- com.testCases.ProductPageTestCases -->
     </classes>
