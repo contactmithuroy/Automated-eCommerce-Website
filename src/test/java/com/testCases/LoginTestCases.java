@@ -16,7 +16,7 @@ public class LoginTestCases extends BaseClass {
     }
 
     @Parameters("url")
-    @Test(priority = 1, description = "Verify that the login page loads successfully")
+    @Test(description = "Verify that the login page loads successfully")
     public void testLoginPageLoadsSuccessfully(String url) {
         driver.get(url); 
         String title = loginPage.getPageTitle();
@@ -24,7 +24,7 @@ public class LoginTestCases extends BaseClass {
         System.out.println("Login page loaded successfully with title: " + title);
     }
 
-    @Test(priority = 2, dataProvider = "loginData", dataProviderClass= BaseClass.class, description = "Verify that login is successful with valid credentials")
+    @Test(dependsOnMethods = {"testLoginPageLoadsSuccessfully"}, priority = 1, dataProvider = "loginData", dataProviderClass= BaseClass.class, description = "Verify that login is successful with valid credentials")
     public void testLoginWithValidCredentials(String email, String password) {
         boolean isLoggedIn = loginPage.loginWithCredentials(email,password );
         Assert.assertTrue(isLoggedIn, "Login failed with valid credentials.");

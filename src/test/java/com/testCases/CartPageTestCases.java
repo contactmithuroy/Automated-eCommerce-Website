@@ -18,7 +18,7 @@ public class CartPageTestCases extends BaseClass {
 	}
 
 	@Parameters("url")
-	@Test(priority = 1, description = "Login to the application")
+	@Test( description = "Login to the application")
 	public void testLogin(String url) throws IOException {
 		// Fetch email and password from the second row
 		String[] credentials = getSecondRowCredentials();
@@ -30,7 +30,7 @@ public class CartPageTestCases extends BaseClass {
 		System.out.println("1. Login successful.");
 	}
 
-	@Test(priority = 2, description = "Add new products using 'Add to Cart' button")
+	@Test(dependsOnMethods = {"testLogin"},priority = 1, description = "Add new products using 'Add to Cart' button")
 	public void testAddProductsToCart() throws InterruptedException {
 		cartPage.addProductsToCart();
 		cartPage.navigateToCart();
@@ -42,7 +42,7 @@ public class CartPageTestCases extends BaseClass {
 		}
 	}
 
-	@Test(priority = 3, description = "Verify the 'Update Quantity' feature")
+	@Test(dependsOnMethods = {"testLogin"}, priority = 2, description = "Verify the 'Update Quantity' feature")
 	public void testUpdateQuantity() {
 		cartPage.updateProductQuantity("3");
 		int cartItemCount = cartPage.getCartItemsCount();
@@ -50,13 +50,13 @@ public class CartPageTestCases extends BaseClass {
 		System.out.println("3. Quantity updated successfully.");
 	}
 
-	@Test(priority = 4, description = "Test 'Proceed to Checkout' button functionality")
+	@Test(dependsOnMethods = {"testLogin"}, priority = 3, description = "Test 'Proceed to Checkout' button functionality")
 	public void testProceedToCheckout() {
 		cartPage.proceedToCheckout();
 		System.out.println("4. Proceeded to checkout successfully.");
 	}
 
-	@Test(priority = 5, description = "Validate total price calculation and place order")
+	@Test(dependsOnMethods = {"testLogin","testProceedToCheckout"},priority = 4, description = "Validate total price calculation and place order")
 	public void testPlaceOrder() {
 		cartPage.addComment("Please deliver between 9 AM and 5 PM.");
 		cartPage.placeOrder();
@@ -65,7 +65,7 @@ public class CartPageTestCases extends BaseClass {
 		System.out.println("5. Order placed successfully.");
 	}
 
-	@Test(priority = 6, description = "Download the invoice of payment")
+	@Test(dependsOnMethods = {"testLogin","testProceedToCheckout"}, priority = 5, description = "Download the invoice of payment")
 	public void testDownloadInvoice() {
 		cartPage.downloadInvoice();
 		System.out.println("6. Invoice downloaded successfully.");
