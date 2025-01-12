@@ -19,10 +19,14 @@ public class LogoutPage {
 
     // Action for Logout
     public boolean logoutSuccessfully() {
-        if (logoutButton.isDisplayed()) {
-            logoutButton.click();
-            return true;
+        try {
+            if (logoutButton.isDisplayed()) {
+                logoutButton.click();
+                return true; // Logout successful
+            }
+        } catch (Exception e) {
+            // Handle exceptions if Logout button is not found
         }
-        return false;
+        return false; // Logout failed
     }
 }

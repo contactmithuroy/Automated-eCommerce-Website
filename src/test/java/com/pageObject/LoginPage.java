@@ -8,10 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
     WebDriver driver;
 
-    // Predefined input values
-    private String email = "admin@mr.com";
-    private String password = "1234";
-
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -35,14 +31,42 @@ public class LoginPage {
         return driver.getTitle();
     }
 
-    public boolean loginWithValidCredentials() {
-        loginEmail.clear();
+    public boolean loginWithCredentials(String email, String password) {
+    	loginEmail.clear();
         loginEmail.sendKeys(email);
         loginPassword.clear();
         loginPassword.sendKeys(password);
         loginButton.click();
-
+        boolean result = logoutButton.isDisplayed();
+        logoutButton.click();
         // Verifies if logout button is displayed after login
-        return logoutButton.isDisplayed();
+        return result;
+    }
+
+    public boolean login(String email, String password) {
+    	loginEmail.clear();
+        loginEmail.sendKeys(email);
+        loginPassword.clear();
+        loginPassword.sendKeys(password);
+        loginButton.click();
+        boolean result = logoutButton.isDisplayed();
+        return result;
+    }
+    
+    public boolean logoutIfLoggedIn() {
+        try {
+            if (logoutButton.isDisplayed()) {
+                logoutButton.click();
+                return true; // Logout successful
+            }
+        } catch (Exception e) {
+            // Ignore as the logout button might not be displayed
+        }
+        return false; // Not logged in
+    }
+
+    public boolean loginForPreRequisites(String email, String password) {
+        logoutIfLoggedIn(); // Ensure no active session exists
+        return login(email, password);
     }
 }
