@@ -40,14 +40,8 @@ The **ExtentReports** library provides an interactive, HTML-based report that in
 - Viewable in any browser with enhanced visualization of test results.
 ### Here some screenshots of ExtentReport result:
 ![image](https://github.com/user-attachments/assets/e2a29f58-87d9-4d4a-b315-44453da35a53)
-![image](https://github.com/user-attachments/assets/8d05000c-39e2-40e4-bd2f-21b814843c53)
-
 ### Test Cases:
 ![image](https://github.com/user-attachments/assets/9142f368-cfda-41b6-9996-7635f20eefd5)
-
-![image](https://github.com/user-attachments/assets/078950a4-a06b-49eb-b057-e4284bad5f17)
-
-
 ## 🔥 How to Run in System
 
 1. **Clone the Repository**:
