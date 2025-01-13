@@ -20,6 +20,8 @@
             </run>
         </groups>
         <classes>
+        	<class name="com.testCases.HomePageTestCases" />
+        	
             <class name="com.testCases.ProductPageTestCases" />
     	
     		<class name="com.testCases.contactPageTestCases"/>
@@ -29,6 +31,8 @@
     		<class name="com.testCases.LoginTestCases"/>
     	
       		<class name="com.testCases.RegistrationTestCase"/>
+      		
+      		<class name="com.testCases.LogoutTestCase"/>
       
 
         </classes>

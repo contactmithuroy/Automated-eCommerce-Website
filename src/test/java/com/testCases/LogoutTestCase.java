@@ -16,11 +16,11 @@ public class LogoutTestCase extends BaseClass {
 	@BeforeClass
 	public void setupPageObject() {
 		loginPage = new LoginPage(driver);
-		logoutPage = new LogoutPage(driver);
+		logoutPage = new LogoutPage(driver); 
 	}
 
 	@Parameters("url")
-	@Test(priority = 1, description = "Verify that login and logout functionality work successfully")
+	@Test(groups = {"sanity","regression"},  priority = 1, description = "Verify that login and logout functionality work successfully")
 	public void testLoginAndLogout(String url) throws IOException {
 		// Fetch email and password from the second row
 		String[] credentials = getSecondRowCredentials();
@@ -28,7 +28,7 @@ public class LogoutTestCase extends BaseClass {
 		String password = credentials[1];
 
 		// Navigate to Login page
-		driver.get(url);
+		driver.get(url+"login");
 
 		// Verify Login Page Loads
 		String loginPageTitle = loginPage.getPageTitle();

@@ -16,22 +16,22 @@ public class ProductPageTestCases extends BaseClass {
     }
 
     @Parameters("url")
-    @Test(priority = 1, description = "Verify that the product page loads successfully")
+    @Test(groups = {"fucntional", "regression"}, priority = 1, description = "Verify that the product page loads successfully")
     public void testHomePageLoadSuccessfully(String url) {
-        driver.get(url);
+        driver.get(url+"products");
         String title = productPage.getPageTitle(driver);
         Assert.assertEquals(title, "Automation Exercise - All Products", "Product page title mismatch.");
         System.out.println("Product page loaded successfully with title: " + title);
     }
 
-    @Test(priority = 2, description = "Validate that navigation links redirect to the correct pages")
+    @Test(groups = {"fucntional", "regression"}, priority = 2, description = "Validate that navigation links redirect to the correct pages")
     public void testAddToCartButton() throws InterruptedException {
         productPage.clickAddToProduct(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://automationexercise.com/products", "Products link navigation failed.");
         System.out.println("Verified Add to Cart functionality.");
     }
     
-    @Test(priority = 3, description = "Test the search functionality on the product page")
+    @Test(groups = {"fucntional", "regression"}, priority = 3, description = "Test the search functionality on the product page")
     public void testSearchFunctionality() {
     	String searchVal = "Shirt";
         productPage.searchProduct(searchVal); // Example product
@@ -41,7 +41,7 @@ public class ProductPageTestCases extends BaseClass {
         System.out.println("Search functionality works as expected.");
     }
     
-    @Test(priority = 4, description = "Validate that category option (WOMEN, MEN, KIDS) works correctly")
+    @Test(groups = {"fucntional", "regression"}, priority = 4, description = "Validate that category option (WOMEN, MEN, KIDS) works correctly")
     public void testCategorySelection() {
         productPage.selectCategory("Women");
         Assert.assertTrue(driver.getTitle().contains("Automation Exercise"), "Women category navigation failed.");
@@ -60,7 +60,7 @@ public class ProductPageTestCases extends BaseClass {
         System.out.println("Category Selection functionality works as expected.");
     }
     
-    @Test(priority = 5, description = "Validate that brand option (Polo, H&M, Biba) works correctly")
+    @Test(groups = {"fucntional", "regression"},  priority = 5, description = "Validate that brand option (Polo, H&M, Biba) works correctly")
     public void testBranSelection() {
         productPage.brandOption("Polo");
         Assert.assertTrue(driver.getTitle().contains("Polo"), "Polo brand navigation failed.");
@@ -74,7 +74,7 @@ public class ProductPageTestCases extends BaseClass {
         System.out.println("Brand Selection functionality works as expected.");
     }
     
-    @Test(priority = 6, description = "Validate that product details page works correctly")
+    @Test(groups = {"fucntional", "regression"},  priority = 6, description = "Validate that product details page works correctly")
     public void productDetailsButton() {
         productPage.viewProduct();
         Assert.assertTrue(driver.getTitle().contains("Product Details"), "Product details navigation failed.");

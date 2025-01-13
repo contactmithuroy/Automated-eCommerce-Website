@@ -16,9 +16,9 @@ public class RegistrationTestCase extends BaseClass {
 
 
 	@Parameters("url")
-	@Test(priority = 1, description = "Verify signup successufully")
+	@Test(groups = {"sanity", "regression"}, priority = 1, description = "Verify signup successufully")
 	public void testfillSignupForm(String url) {
-		driver.get(url);
+		driver.get(url+"login");
 		registrationPage.fillSignupForm();
 		// Step 3: Verify Account Created message
 		String currentURL = driver.getCurrentUrl();
@@ -27,7 +27,7 @@ public class RegistrationTestCase extends BaseClass {
 		System.out.println("Sign up successfully: ");
 	}
 
-	@Test(priority = 2, description = "Verify new user registration")
+	@Test(groups = {"sanity", "regression"}, priority = 2, description = "Verify new user registration")
 	public void testNewUserRegistration() {
 		registrationPage.fillAccountInformation();
 		// Step 3: Verify Account Created message

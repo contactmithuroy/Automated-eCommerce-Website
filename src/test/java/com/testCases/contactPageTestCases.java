@@ -15,15 +15,15 @@ public class contactPageTestCases extends BaseClass {
 	}
 
 	@Parameters("url")
-	@Test(priority = 1, description = "Verify that the contact us page loads successfully")
+	@Test(groups = {"functional", "regression"},  priority = 1, description = "Verify that the contact us page loads successfully")
 	public void testContactUsPageLoadsSuccessfully(String url) {
-		driver.get(url);
+		driver.get(url+"contact_us");
 		String title = contactPage.getPageTitle(driver);
 		Assert.assertEquals(title, "Automation Exercise - Contact Us", "Contact Us page title mismatch.");
 		System.out.println("Contact Us page loaded successfully with title: " + title);
 	}
 	
-	@Test(priority = 2, description = "Test the form submission with valid data")
+	@Test(groups = {"functional", "regression"},  priority = 2, description = "Test the form submission with valid data")
     public void testFormSubmissionWithValidData() {
         contactPage.submitForm("notEmail");
         String successMessage = contactPage.getSuccessMessage();
@@ -32,7 +32,7 @@ public class contactPageTestCases extends BaseClass {
         
     }
 	@Parameters("url")
-	@Test(priority = 3, description = "Test form submission with missing email value and validate error messages")
+	@Test(groups = {"functional", "regression"},  priority = 3, description = "Test form submission with missing email value and validate error messages")
     public void testFormSubmissionWithMissingEmail(String url) {
 		driver.get(url);
         contactPage.submitForm("emptyEmail");
