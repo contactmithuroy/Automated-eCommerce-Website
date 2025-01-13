@@ -38,6 +38,11 @@ The **ExtentReports** library provides an interactive, HTML-based report that in
 - **Screenshots**: Screenshots attached to failed tests.
 - **System Info**: Browser and OS details for context.
 - Viewable in any browser with enhanced visualization of test results.
+### Here some screenshots of ExtentReport result:
+![image](https://github.com/user-attachments/assets/e2a29f58-87d9-4d4a-b315-44453da35a53)
+### Test Cases:
+![image](https://github.com/user-attachments/assets/078950a4-a06b-49eb-b057-e4284bad5f17)
+
 
 ## 🔥 How to Run in System
 
