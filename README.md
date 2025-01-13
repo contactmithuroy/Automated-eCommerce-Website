@@ -2,6 +2,8 @@
 
 ## 🔥 Brief About the Project
 This project automates the testing of a web application using **Selenium WebDriver**,**Maven** and **TestNG**. It covers the automation of various web pages, including the Home, Product, Contact, Login, Logout, Registration, and Cart pages. The tests are data-driven, extracting inputs from an Excel sheet. Detailed HTML reports are generated using **ExtentReports**, which include test logs, screenshots on failure, and browser information for better visibility.
+![image](https://github.com/user-attachments/assets/8dd72788-dc95-4beb-ac63-8b422b5feaac) ![image](https://github.com/user-attachments/assets/f9ce9b4f-0c45-43d6-9d70-944f7d33b1b5)
+
 
 ## Language and Tools
 - **Programming Language**: Java
