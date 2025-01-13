@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Functional Testing Suite">
+    
     <!-- Home Page Tests -->
-    <test name="Home Page Tests">
+    <test name="Home Page Tests" enabled="true">
         <parameter name="browserName" value="edge" />
         <parameter name="url" value="https://automationexercise.com/" />
         <classes>
@@ -11,7 +12,7 @@
     </test>
 
     <!-- Product Page Tests -->
-    <test name="Product Page Tests">
+    <test name="Product Page Tests" enabled="true">
         <parameter name="browserName" value="chrome" />
         <parameter name="url" value="https://automationexercise.com/" />
         <classes>
@@ -20,7 +21,7 @@
     </test>
 
     <!-- Contact Page Tests -->
-    <test name="Contact Page Tests">
+    <test name="Contact Page Tests" enabled="true">
         <parameter name="browserName" value="edge" />
         <parameter name="url" value="https://automationexercise.com/" />
         <classes>
@@ -29,7 +30,7 @@
     </test>
 
     <!-- Cart Page Tests -->
-    <test name="Cart Page Tests">
+    <test name="Cart Page Tests" enabled="true">
         <parameter name="browserName" value="chrome" />
         <parameter name="url" value="https://automationexercise.com/" />
         <classes>
@@ -38,7 +39,7 @@
     </test>
 
     <!-- Login Page Tests -->
-    <test name="Login Page Tests">
+    <test name="Login Page Tests" enabled="true">
         <parameter name="browserName" value="chrome" />
         <parameter name="url" value="https://automationexercise.com/" />
         <classes>
@@ -47,7 +48,7 @@
     </test>
 
     <!-- Registration Page Tests -->
-    <test name="Registration Page Tests">
+    <test name="Registration Page Tests" enabled="true">
         <parameter name="browserName" value="chrome" />
         <parameter name="url" value="https://automationexercise.com/" />
         <classes>
@@ -56,7 +57,7 @@
     </test>
 
     <!-- Logout Page Tests -->
-    <test name="Logout Page Tests">
+    <test name="Logout Page Tests" enabled="true">
         <parameter name="browserName" value="chrome" />
         <parameter name="url" value="https://automationexercise.com/" />
         <classes>

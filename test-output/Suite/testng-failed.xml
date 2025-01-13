@@ -8,21 +8,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.testCases.contactPageTestCases">
-        <methods>
-          <include name="testFormSubmissionWithMissingEmail" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="setupPageObject"/>
-        </methods>
-      </class> <!-- com.testCases.contactPageTestCases -->
-      <class name="com.testCases.HomePageTestCases">
-        <methods>
-          <include name="testCarouselContent"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.testCases.HomePageTestCases -->
       <class name="com.testCases.LoginTestCases">
         <methods>
           <include name="testLoginPageLoadsSuccessfully"/>
@@ -32,19 +17,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.testCases.LoginTestCases -->
-      <class name="com.testCases.CartPageTestCases">
-        <methods>
-          <include name="testDownloadInvoice"/>
-          <include name="testPlaceOrder"/>
-          <include name="testLogin"/>
-          <include name="testAddProductsToCart"/>
-          <include name="setupPageObject"/>
-          <include name="testProceedToCheckout"/>
-          <include name="testUpdateQuantity"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.testCases.CartPageTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

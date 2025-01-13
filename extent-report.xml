@@ -4,63 +4,14 @@
     <listeners>
         <listener class-name="com.testBase.ExtentReportsManager" />
     </listeners>
-
-    <!-- Group Definitions -->
-    <groups>
-        <!-- Meta Groups -->
-        <define name="dailyBuild">
-            <include name="sanity" />
-            <include name="regression" />
-        </define>
-        <define name="weeklyBuild">
-            <include name="smoke" />
-            <include name="functional" />
-        </define>
-        <!-- Specify the groups to run -->
-        <run>
-            <include name="regression" />
-        </run>
-    </groups>
-
-    <!-- Smoke Tests -->
-    <test name="Smoke Tests" group-by-instances="true">
-        <parameter name="browserName" value="chrome" />
-        <parameter name="url" value="https://automationexercise.com/" />
-        <classes>
-            <class name="com.testCases.HomePageTestCases" />
-            <class name="com.testCases.LoginTestCases" />
-            <class name="com.testCases.contactPageTestCases" />
-        </classes>
-    </test>
-
-    <!-- Functional Tests -->
-    <test name="Functional Tests" group-by-instances="true">
-        <parameter name="browserName" value="chrome" />
-        <parameter name="url" value="https://automationexercise.com/" />
-        <classes>
-            <class name="com.testCases.ProductPageTestCases" />
-            <class name="com.testCases.CartPageTestCases" />
-        </classes>
-    </test>
-
-    <!-- Sanity Tests -->
-    <test name="Sanity Tests" group-by-instances="true">
-        <parameter name="browserName" value="edge" />
-        <parameter name="url" value="https://automationexercise.com/" />
-        <classes>
-            <class name="com.testCases.RegistrationTestCase" />
-            <class name="com.testCases.LogoutTestCase" />
-        </classes>
-    </test>
-
-    <!-- Regression Tests -->
+    <!-- Regrasssion  Tests -->
     <test name="Regression Tests" group-by-instances="true">
-         <parameter name="browserName" value="edge" />
+        <parameter name="browserName" value="chrome" />
         <parameter name="url" value="https://automationexercise.com/" />
         <classes>
             <class name="com.testCases.HomePageTestCases" />
-            <class name="com.testCases.ProductPageTestCases" />
             <class name="com.testCases.contactPageTestCases" />
+             <class name="com.testCases.ProductPageTestCases" />
             <class name="com.testCases.CartPageTestCases" />
             <class name="com.testCases.LoginTestCases" />
             <class name="com.testCases.RegistrationTestCase" />

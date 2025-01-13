@@ -4,156 +4,55 @@
   <listeners>
     <listener class-name="com.testBase.ExtentReportsManager"/>
   </listeners>
-  <test thread-count="5" name="Smoke Tests(failed)">
-    <parameter name="browserName" value="chrome"/>
-    <parameter name="url" value="https://automationexercise.com/"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.testCases.HomePageTestCases">
-        <methods>
-          <include name="testCarouselContent"/>
-          <include name="testLogoVisibility"/>
-          <include name="testHomePageLoadsSuccessfully" invocation-numbers="0"/>
-          <include name="testPageTitle"/>
-          <include name="testNavigationLinks"/>
-          <include name="testFooterLinksVisibility"/>
-        </methods>
-      </class> <!-- com.testCases.HomePageTestCases -->
-      <class name="com.testCases.LoginTestCases">
-        <methods>
-          <include name="testLoginPageLoadsSuccessfully" invocation-numbers="0"/>
-          <include name="testLoginWithValidCredentials"/>
-        </methods>
-      </class> <!-- com.testCases.LoginTestCases -->
-      <class name="com.testCases.contactPageTestCases">
-        <methods>
-          <include name="testFormSubmissionWithMissingEmail" invocation-numbers="0"/>
-          <include name="testContactUsPageLoadsSuccessfully" invocation-numbers="0"/>
-          <include name="testFormSubmissionWithValidData"/>
-        </methods>
-      </class> <!-- com.testCases.contactPageTestCases -->
-    </classes>
-  </test> <!-- Smoke Tests(failed) -->
-  <test thread-count="5" name="Functional Tests(failed)">
-    <parameter name="browserName" value="chrome"/>
-    <parameter name="url" value="https://automationexercise.com/"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.testCases.ProductPageTestCases">
-        <methods>
-          <include name="testSearchFunctionality"/>
-          <include name="testBranSelection"/>
-          <include name="testAddToCartButton"/>
-          <include name="testCategorySelection"/>
-          <include name="productDetailsButton"/>
-          <include name="testHomePageLoadSuccessfully" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.testCases.ProductPageTestCases -->
-      <class name="com.testCases.CartPageTestCases">
-        <methods>
-          <include name="testDownloadInvoice"/>
-          <include name="testLogin" invocation-numbers="0"/>
-          <include name="testPlaceOrder"/>
-          <include name="testAddProductsToCart"/>
-          <include name="testProceedToCheckout"/>
-          <include name="testUpdateQuantity"/>
-        </methods>
-      </class> <!-- com.testCases.CartPageTestCases -->
-    </classes>
-  </test> <!-- Functional Tests(failed) -->
-  <test thread-count="5" name="Sanity Tests(failed)">
-    <parameter name="browserName" value="edge"/>
-    <parameter name="url" value="https://automationexercise.com/"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.testCases.LogoutTestCase">
-        <methods>
-          <include name="testLoginAndLogout" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.testCases.LogoutTestCase -->
-      <class name="com.testCases.RegistrationTestCase">
-        <methods>
-          <include name="testfillSignupForm" invocation-numbers="0"/>
-          <include name="testNewUserRegistration"/>
-        </methods>
-      </class> <!-- com.testCases.RegistrationTestCase -->
-    </classes>
-  </test> <!-- Sanity Tests(failed) -->
   <test thread-count="5" name="Regression Tests(failed)">
-    <parameter name="browserName" value="edge"/>
+    <parameter name="browserName" value="chrome"/>
     <parameter name="url" value="https://automationexercise.com/"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
     <classes>
       <class name="com.testCases.HomePageTestCases">
         <methods>
           <include name="testCarouselContent"/>
-          <include name="testHomePageLoadsSuccessfully" invocation-numbers="0"/>
-          <include name="testLogoVisibility"/>
-          <include name="testNavigationLinks"/>
-          <include name="testPageTitle"/>
-          <include name="testFooterLinksVisibility"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.testCases.HomePageTestCases -->
+      <class name="com.testCases.CartPageTestCases">
+        <methods>
+          <include name="testDownloadInvoice"/>
+          <include name="testLogin"/>
+          <include name="testPlaceOrder"/>
+          <include name="testAddProductsToCart"/>
+          <include name="setupPageObject"/>
+          <include name="testUpdateQuantity"/>
+          <include name="testProceedToCheckout"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.testCases.CartPageTestCases -->
       <class name="com.testCases.ProductPageTestCases">
         <methods>
-          <include name="testSearchFunctionality"/>
-          <include name="testBranSelection"/>
-          <include name="testCategorySelection"/>
+          <include name="setupPageObject"/>
+          <include name="tearDown"/>
           <include name="testAddToCartButton"/>
-          <include name="productDetailsButton"/>
-          <include name="testHomePageLoadSuccessfully" invocation-numbers="0"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.testCases.ProductPageTestCases -->
-      <class name="com.testCases.LogoutTestCase">
-        <methods>
-          <include name="testLoginAndLogout" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.testCases.LogoutTestCase -->
       <class name="com.testCases.LoginTestCases">
         <methods>
-          <include name="testLoginPageLoadsSuccessfully" invocation-numbers="0"/>
-          <include name="testLoginWithValidCredentials"/>
+          <include name="testLoginPageLoadsSuccessfully"/>
+          <include name="setupPageObject"/>
+          <include name="testLoginWithValidCredentials" invocation-numbers="1 2"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.testCases.LoginTestCases -->
       <class name="com.testCases.contactPageTestCases">
         <methods>
           <include name="testFormSubmissionWithMissingEmail" invocation-numbers="0"/>
-          <include name="testContactUsPageLoadsSuccessfully" invocation-numbers="0"/>
-          <include name="testFormSubmissionWithValidData"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setupPageObject"/>
         </methods>
       </class> <!-- com.testCases.contactPageTestCases -->
-      <class name="com.testCases.CartPageTestCases">
-        <methods>
-          <include name="testDownloadInvoice"/>
-          <include name="testLogin" invocation-numbers="0"/>
-          <include name="testPlaceOrder"/>
-          <include name="testAddProductsToCart"/>
-          <include name="testProceedToCheckout"/>
-          <include name="testUpdateQuantity"/>
-        </methods>
-      </class> <!-- com.testCases.CartPageTestCases -->
-      <class name="com.testCases.RegistrationTestCase">
-        <methods>
-          <include name="testfillSignupForm" invocation-numbers="0"/>
-          <include name="testNewUserRegistration"/>
-        </methods>
-      </class> <!-- com.testCases.RegistrationTestCase -->
     </classes>
   </test> <!-- Regression Tests(failed) -->
 </suite> <!-- Failed suite [Test Suite with Smoke, Functional, Sanity, and Regression Tests] -->

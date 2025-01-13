@@ -14,6 +14,20 @@
       </class> <!-- com.testCases.HomePageTestCases -->
     </classes>
   </test> <!-- Home Page Tests(failed) -->
+  <test thread-count="5" name="Product Page Tests(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://automationexercise.com/"/>
+    <classes>
+      <class name="com.testCases.ProductPageTestCases">
+        <methods>
+          <include name="setupPageObject"/>
+          <include name="tearDown"/>
+          <include name="testAddToCartButton"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.testCases.ProductPageTestCases -->
+    </classes>
+  </test> <!-- Product Page Tests(failed) -->
   <test thread-count="5" name="Contact Page Tests(failed)">
     <parameter name="browserName" value="edge"/>
     <parameter name="url" value="https://automationexercise.com/"/>
@@ -34,9 +48,13 @@
     <classes>
       <class name="com.testCases.CartPageTestCases">
         <methods>
+          <include name="testDownloadInvoice"/>
           <include name="testLogin"/>
+          <include name="testPlaceOrder"/>
+          <include name="testAddProductsToCart"/>
           <include name="setupPageObject"/>
           <include name="testUpdateQuantity"/>
+          <include name="testProceedToCheckout"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

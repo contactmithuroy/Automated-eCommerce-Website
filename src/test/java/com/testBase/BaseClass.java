@@ -18,7 +18,8 @@ import java.io.IOException;
 import java.time.Duration;
 
 public class BaseClass {
-	protected WebDriver driver;
+	protected static WebDriver driver;
+	
 	@Parameters("browserName")
 	@BeforeClass
 	public void setUp(String browserName) {
@@ -91,6 +92,11 @@ public class BaseClass {
 			fileInputStream.close();
 			return allData;
 		}
+	}
+
+	public static WebDriver getDriver() {
+		// TODO Auto-generated method stub
+		return driver;
 	}
 
 
